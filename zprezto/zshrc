@@ -1,0 +1,62 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# ALIASES
+alias python='/usr/bin/python3'
+
+# load mcAlias
+source $HOME/mcCloud/mcConfig/shell/mcAliases
+
+# - Git aliases
+alias gs="git status --short"
+alias gaa="git add -A :/$*"
+alias ga="git add ."
+alias gcm="git commit -m $*"
+alias gf="git fetch $*"
+alias grd="git rebase develop $*"
+alias grc="git rebase --continue"
+alias gnb="git checkout -b $*"
+alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all"
+
+# USER CONFIGURATION
+export PATH="/usr/local/opt/libxml2/bin:$HOME/dev/flutter/bin:$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr/local/opt/ruby/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/php@8.1/bin:$PATH"
+export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/libxml2/lib -L/usr/local/opt/gettext/lib -L/usr/local/opt/icu4c/lib -L/usr/local/opt/ruby/lib -L/usr/local/opt/php@8.1/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/php@8.1/include"
+
+#export LDFLAGS="-L/usr/local/opt/libxml2/lib -L/usr/local/opt/gettext/lib -L/usr/local/opt/icu4c/lib"
+#export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
+# EDITOR
+#export EDITOR='subl -w'
+#export EDITOR=/usr/bin/vim
+#export VISUAL=/usr/bin/vim
+export EDITOR=/usr/local/bin/nvim
+export VISUAL=/usr/local/bin/nvim
+
