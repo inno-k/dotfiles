@@ -1,0 +1,30 @@
+
+# Xcode
+#alias o='open .'
+#alias c='clear'
+# alias pi='bundle exec pod install || pod install'
+#
+
+
+# ------------------------------
+# git
+# ------------------------------
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# ------------------------------
+# ls
+# ------------------------------
+alias ls='ls -ahp --color --time-style="+%Y-%m-%d"'
+
+# ------------------------------
+# NeoVim
+# ------------------------------
+alias vim="nvim"
+alias vi="nvim"
+
+# ------------------------------
+# Laravel
+# ------------------------------
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+

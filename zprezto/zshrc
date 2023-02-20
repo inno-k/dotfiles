@@ -26,7 +26,7 @@ fi
 alias python='/usr/bin/python3'
 
 # load mcAlias
-source $HOME/mcCloud/mcConfig/shell/mcAliases
+source $HOME/mcCloud/mcConfig/dotfiles//mcAliases
 
 # - Git aliases
 alias gs="git status --short"
