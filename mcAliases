@@ -14,7 +14,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ------------------------------
 # ls
 # ------------------------------
-alias ls='ls -ahp --color --time-style="+%Y-%m-%d"'
+#alias ls='ls -ahp --color --time-style="+%Y-%m-%d"'
+alias ls='ls -ahp --color'
 
 # ------------------------------
 # NeoVim
