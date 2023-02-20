@@ -19,6 +19,11 @@ brew "zsh"
 brew "zsh-completions"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "bat"
+brew "osx-cpu-temp"
+brew "fd"
+brew "ncdu"
+brew "bpytop"
 
 # brew "go"
 # brew "jq"
@@ -31,13 +36,16 @@ brew "zsh-syntax-highlighting"
 
 # Casks
 cask "iterm2"                         # Terminal
+cask "istat-menus"                    # Stats (Paid)
 cask "karabiner-elements"             # Keyboard Customizer
+cask "marta"
 cask "visual-studio-code"             # IDE
 cask "adguard"                        # Remove Ads (Paid)
 cask "authy"                          # OTP
 cask "movist-pro"                     # Video Player (Paid)
 cask "notion"                         # Note
-cask "istat-menus"                    # Stats (Paid)
+cask "fuwari"
+cask "sublime-text"
 
 # cask "postman"                        # API Test
 # cask "bitwarden"                      # Password Manager
