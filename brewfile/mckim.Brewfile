@@ -4,8 +4,6 @@
 
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "hacker1024/hacker1024"
 
 # Binaries/Libraries
@@ -20,11 +18,12 @@ brew "zsh-completions"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "bat"
-brew "osx-cpu-temp"
 brew "fd"
 brew "ncdu"
 brew "bpytop"
+brew "coretemp"
 
+#brew "osx-cpu-temp"
 # brew "go"
 # brew "jq"
 # brew "mackup"                         # MacBackup
