@@ -1,15 +1,21 @@
 
-# Xcode
-#alias o='open .'
-#alias c='clear'
-# alias pi='bundle exec pod install || pod install'
-#
-
-
 # ------------------------------
 # git
 # ------------------------------
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gss="git status --short"
+alias gs="git status"
+alias gnb="git checkout -b $*"
+alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all"
+#alias gaa="git add -A :/$*"
+#alias ga="git add ."
+#alias gcm="git commit -m $*"
+#alias gf="git fetch $*"
+#alias grd="git rebase develop $*"
+#alias grc="git rebase --continue"
+
+# for dotfiles - not use
+#alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 # ------------------------------
 # ls
@@ -17,11 +23,13 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 #alias ls='ls -ahp --color --time-style="+%Y-%m-%d"'
 alias ls='ls -ahp --color'
 
+
 # ------------------------------
 # NeoVim
 # ------------------------------
 alias vim="nvim"
 alias vi="nvim"
+
 
 # ------------------------------
 # Laravel
@@ -29,3 +37,6 @@ alias vi="nvim"
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 
+# ------------------------------
+# etc
+# ------------------------------
