@@ -23,26 +23,15 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ALIASES
-alias python='/usr/bin/python3'
+alias python='/usr/local/bin/python3'
 
 # load mcAlias
 source $HOME/mcCloud/mcConfig/dotfiles//mcAliases
 
-# - Git aliases
-alias gs="git status --short"
-alias gaa="git add -A :/$*"
-alias ga="git add ."
-alias gcm="git commit -m $*"
-alias gf="git fetch $*"
-alias grd="git rebase develop $*"
-alias grc="git rebase --continue"
-alias gnb="git checkout -b $*"
-alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all"
-
 # USER CONFIGURATION
 export PATH="/usr/local/opt/libxml2/bin:$HOME/dev/flutter/bin:$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/opt/ruby/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:$PATH"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+#export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/php@8.1/bin:$PATH"
 export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
 
